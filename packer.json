@@ -1,0 +1,22 @@
+{
+  "builders":  [
+    {
+      "type": "googlecompute",
+      "project_id": "week10-group-team1",
+      "machine_type": "f1-micro",
+      "source_image_family": "ubuntu-1604-lts",
+      "zone": "europe-west1-c",
+      "image_name": "lamp-server-image-v1",
+      "image_description": "Ubuntu Machine Image Lamp server installation",
+      "ssh_username": "root"
+    }
+   ],
+   "provisioners":  [
+    {
+      "type": "shell",
+      "script": "apache.sh",
+      "execute_command": "chmod 700 apache.sh"
+    }
+   ]
+}
+
