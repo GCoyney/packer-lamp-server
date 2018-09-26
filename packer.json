@@ -14,8 +14,7 @@
    "provisioners":  [
     {
       "type": "shell",
-      "script": "apache.sh",
-      "execute_command": "chmod 700 apache.sh"
+      "script": "apache.sh"
     }
    ]
 }

@@ -1,5 +1,8 @@
-cd ~
-wget https://gist.github.com/aamnah/f03c266d715ed479eb46/raw/758ef5aa1e05d5b518b74638865bc2029a5a1fe7/lamp.sh
-chmod -x ./lamp.sh
-bash ./lamp.sh
-
+#!/bin/bash
+apt-get update 
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password your_password'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password_again your_password'
+sudo apt-get -y install mysql-server
+apt-get install -y apache2
+apt-get -y install php7.0 libapache2-mod-php7.0
+sudo systemctl restart apache2
