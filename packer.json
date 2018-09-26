@@ -14,7 +14,7 @@
    "provisioners":  [
     {
       "type": "shell",
-      "script": "apache.sh"
+      "script": "apache.sh, getindex.sh"
     }
    ]
 }

@@ -6,3 +6,4 @@ sudo apt-get -y install mysql-server
 apt-get install -y apache2
 apt-get -y install php7.0 libapache2-mod-php7.0
 sudo systemctl restart apache2
+sudo systemctl enable apache2
