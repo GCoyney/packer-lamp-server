@@ -8,7 +8,8 @@
       "zone": "europe-west1-c",
       "image_name": "lamp-server-v1",
       "image_description": "Ubuntu Machine Image Lamp server installation",
-      "ssh_username": "root"
+      "ssh_username": "packer",
+      "ssh_password": "packer"
     }
    ],
    "provisioners":  [
